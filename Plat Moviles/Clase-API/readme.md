@@ -53,6 +53,7 @@ fetch(`https://picsum.photos/id/0/info`)
     })
 ```
 Resultado: 
+
 <img src="img/ejemplo1.PNG">
 
 Sabiendo que, mediante el id controlamos la imagen, podemos hacer que se genere un numero aleatorio en el id, mediante, la siguiente funcion
