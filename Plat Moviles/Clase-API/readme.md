@@ -5,14 +5,11 @@ En palabras mas sencillas, una API funciona como intermediaria en la comunicaci�
 
 Cada una de las APIs que se desarrollen suelen tener un endpoint, es decir una url mediante la cual los clientes o desarrolladores pueden acceder a esa funciones
 
-## REST
-La forma más comun de implentar una API es mediante REST (Representational State Transfer), un tipo de servicio que se caracteriza por lograr interconexiones mediante HTTP con mensajes de tipo XML o JSON.
+## API Web y REST
+Una API web es permite que diferentes aplicaciones se comuniquen entre sí a través de la web. Las API web permiten que una aplicación solicite datos o acciones a otra aplicación a través de solicitudes HTTP (por lo general utilizando los métodos HTTP como GET, POST, PUT, DELETE).
+La forma más comun de implentar una API de este estilo es mediante REST (Representational State Transfer), un tipo de servicio que se caracteriza por lograr interconexiones HTTP con mensajes de tipo XML o JSON.
 
 <img src="https://dossetenta.com/wp-content/uploads/2021/12/R6qFq3n.png"/>
-
-## APIs WEB o Remotas
-Son APIs que comunican aplicaciones entre sí a través de internet. 
-
 
 ### Ejemplo y uso de fetch()
 <a href="https://picsum.photos">Lorem Picsum</a> es una API que entrega una imagen, cuyas características pueden ser definidas mediante url. La siguiente solicitud, por ejemplo devuelve una imagen al azar de 200x300 píxeles:
