@@ -16,6 +16,33 @@ Existen varios tipos:
 
 Para evitar que las pruebas arrojen resultados distintos de un dispositivo a otro se emplean los **entornos virtuales**. Estos son "entornos de software que permiten ejecutar sistemas informáticos de forma aislada dentro de un sistema". Esto asegura que, si se puede ejecutar un programa de dicha manera, se podrá ejecutar en prácticamente cualquier sistema compatible.
 
+### Creación de un entorno virtual
+
+Dentro de la carpeta que contenga la carpeta de nuestro proyecto ejecutar el siguiente comando:
+
+```cmd
+python -m venv env
+```
+
+Esto nos creará la carpeta 'env', que contiene las siguientes subcarpetas:
+
+<img src="img/carpetaEnv.png">
+
+Podemos ejecutar nuestro entorno virtual ejecutando la sentencia
+
+```cmd
+env\Scripts\activate
+```
+
+Tras esto se nos indicará que estamos dentro de un entorno virtual. Lo interesante de todo esto es que si ejecutamos "pip list", para mostrar todas las librerias de python que tenemos instaladas nos aparecerán solamente las básicas, no contaremos ni con flet, ni con mysql, entre otros. 
+
+Es solamente cuestión de volver a instalarlos, pero esta vez dentro del entorno virtual. Recuerden que para instalar dichos paquetes se usaban los siguientes comandos (ademas de los comandos para las librerias que hayan puesto ustedes en cada proyecto):
+
+```cmd
+pip install flet, flet-route, mysql, mysql-connector-python
+```
+
+
 ## Casos
 
 - **Sitio/aplicación web**: Para que el proyecto esté al alcance de los usuarios, se debe encontrar alojado en un sitio web
