@@ -26,7 +26,7 @@ python -m venv env
 
 Esto nos creará la carpeta 'env', que contiene las siguientes subcarpetas:
 
-<img src="img/carpetaEnv.png">
+<img src="img/carpetaEnv.png" alt="Carpeta env">
 
 Podemos ejecutar nuestro entorno virtual ejecutando la sentencia
 
@@ -36,17 +36,20 @@ env\Scripts\activate
 
 Tras esto se nos indicará que estamos dentro de un entorno virtual. Lo interesante de todo esto es que si ejecutamos "pip list", para mostrar todas las librerias de python que tenemos instaladas nos aparecerán solamente las básicas, no contaremos ni con flet, ni con mysql, entre otros. 
 
-Es solamente cuestión de volver a instalarlos, pero esta vez dentro del entorno virtual. Recuerden que para instalar dichos paquetes se usaban los siguientes comandos (ademas de los comandos para las librerias que hayan puesto ustedes en cada proyecto):
+Por otro lado, si intentamos ejecutar la aplicación nos dirá que no tenemos instaladas las librerias
+
+Es solamente cuestión de volver a instalarlas, pero esta vez dentro del entorno virtual. Recuerden que para instalar dichos paquetes se usaban los siguientes comandos (ademas de los comandos para las librerias que hayan puesto ustedes en cada proyecto):
 
 ```cmd
 pip install flet, flet-route, mysql, mysql-connector-python
 ```
 
+Si tras instalar las librerias dentro del entorno y ejecutando la aplicación esta se muestra, nuestra aplicación debería funcionar en otros dispositivos tambien
 
 ## Casos
 
-- **Sitio/aplicación web**: Para que el proyecto esté al alcance de los usuarios, se debe encontrar alojado en un sitio web
+- **Sitio/aplicación web**: Para que el proyecto esté al alcance de los usuarios, se debe encontrar alojado en un sitio web. Se puede consultar la <a href="https://flet.dev/docs/guides/python/publishing-static-website">guia</a>
 - **Aplicación de escritorio**: Se debe poder instalar y ejecutar la aplicación, además, el instalador de la aplicación debe poder ser descargable via internet.
-    Para poder lograr esto empleando flet deberemos de seguir los pasos que indica la <a href="https://flet.dev/docs/guides/python/packaging-desktop-app/">siguiente guía</a>:
-    - *Obtener PyInstaller*: PyInstaller es un módulo que nos va a permitir convertir nuestros archivos ".py" 
+    Para poder lograr esto empleando flet deberemos de seguir los pasos que indica la <a href="https://flet.dev/docs/guides/python/packaging-desktop-app/">guía</a>
+- **Aplicación móvil**: Se debe obtener un archivo apk para poder instalar en el celular. Se puede consultar el siguiente <a href="https://www.youtube.com/watch?v=oglPs0lSh1Y&ab_channel=SriEdyNurcahyo">video</a>
 
